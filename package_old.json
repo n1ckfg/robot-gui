@@ -17,6 +17,7 @@
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "debug": "^2.2.0",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "serialport": "^4.0.1"
   }
 }
