@@ -3,6 +3,15 @@
 const express = require("express");
 const app = express();
 
+const sp = require("serialport").SerialPort;
+
+sp.list().then(
+    ports => ports.forEach(
+        port => console.log("\nSerial device: " + port.path)
+    ),
+    err => console.log(err)
+);
+
 const cmd = require("node-cmd");
 const crypto = require("crypto"); 
 const bodyParser = require("body-parser");
